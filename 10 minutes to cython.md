@@ -1,4 +1,5 @@
 # 10分钟入门Cython
+https://github.com/tushushu/flying-python
 
 ## 1. Cython是什么?
 Cython是一个编程语言，它通过类似Python的语法来编写C扩展并可以被Python调用.既具备了Python快速开发的特点，又可以让代码运行起来像C一样快，同时还可以方便地调用C
@@ -23,16 +24,14 @@ compiler=mingw32
 gcc一般都是配置好的，如果没有就执行这条命令：  ``sudo apt-get install build-essential``  
 
 
-### 2.2
-安装cython库
+### 2.2 安装cython库
 - 如果没安装Anaconda：  ``pip install cython`` 
 - 如果安装了Anaconda：  ``conda
 install cython``
 
 ## 3. 在Jupyter Notebook上使用Cython 
 - 首先加载Cython扩展，使用魔术命令  ``%load_ext Cython``
--
-接下来运行Cython代码，使用魔术命令  ``%%cython``
+- 接下来运行Cython代码，使用魔术命令  ``%%cython``
 
 ```python
 %load_ext Cython
@@ -48,10 +47,8 @@ print(a)
 
 ## 4. 试试Cython到底有多快
 - 常规Python函数，运行时间559 ns
-- Cython
-def函数，声明一个Python函数，既可以在模块内调用，也可以在模块外调用。模块内运行时间524.2 ns，模块外运行时间512 ns
-- Cython
-cpdef函数，声明一个C函数和一个Python wrapper，在模块内被当做C函数调用，在模块外被.py文件当做Python函数调用。模块内运行时间43.7
+- Cython def函数，声明一个Python函数，既可以在模块内调用，也可以在模块外调用。模块内运行时间524.2 ns，模块外运行时间512 ns
+- Cython cpdef函数，声明一个C函数和一个Python wrapper，在模块内被当做C函数调用，在模块外被.py文件当做Python函数调用。模块内运行时间43.7
 ns，模块外运行时间81.7 ns
 - Cython cdef函数，声明一个C函数，不可以在模块外被Python调用。模块内运行时间34.8 ns
 
