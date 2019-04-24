@@ -1,5 +1,11 @@
+"""
+@Author: tushushu
+@Date: 2019-04-24 16:11:52
+"""
+
 # Makes pyximport compatible with cpp! 
 # import pyx2cpp; pyx2cpp.install()
+# https://stackoverflow.com/questions/21938065/how-to-configure-pyximport-to-always-make-a-cpp-file
 
 import pyximport
 from pyximport import install

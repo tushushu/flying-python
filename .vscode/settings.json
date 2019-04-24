@@ -1,0 +1,13 @@
+{
+    "fileheader.Author": "tushushu",
+    "fileheader.LastModifiedBy": "tushushu",
+    "fileheader.tpl": "\"\"\"\r\n@Author: {author}\r\n@Date: {createTime}\r\n\"\"\"\r\n",
+    "python.linting.pylintUseMinimalCheckers": false,
+    "python.linting.pylintArgs": [
+        "--disable=invalid-name"
+    ],
+    "python.linting.pylintEnabled": false,
+    "python.linting.mypyEnabled": true,
+    "python.linting.enabled": true,
+    "python.linting.flake8Enabled": false
+}
